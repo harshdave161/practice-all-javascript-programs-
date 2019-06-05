@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <script src="index.js" type="text/javascript"></script>
+      <title>javascript partice</title>
+    <script> 
+    let name=prompt("Enter Your Name !!");
+  const validate = () => {
+      var username =document.getElementById("phone").value;
+      var regex= /^[7-9]\d{9}$/;  
+      if(regex.test(username)){
+        document.getElementById("ivphoneno").style.visibility="visible";
+        document.getElementById("ivphoneno").style.color= "green";
+        document.getElementById("phone").style.border="solid 2px green";
+        document.getElementById("ivphoneno").innerHTML = "Valid Phone-Number";
+        alert(" Valid number "+ name);
+      }
+      else{
+      document.getElementById("ivphoneno").style.visibility = "visible";
+        document.getElementById("ivphoneno").style.color = "red";
+        document.getElementById("phone").style.border = "solid 2px red";
+        document.getElementById("ivphoneno").innerHTML = "InValid Phone-Number";
+        alert(" InValid number " + name);
+        alert("Try Again By Putting Valid Phone-Number");
+      }
+      console.log("Hello "+ name);
+      console.log("hope you understood the concept !! Don't forget too upvote !!");
+  }  
+
+    </script>
+    </head>
+    <body>
+      <p><b>Regular expressions</b> are been used basic concept too validate cell-phone number's from user input  !! </p>
+      <p> Testing Indian Phone-Number's which starts form first number range form [7-9]!!<br> & 9 number's followed [0-9] in range !!</p>
+      <label>Phone-Number :</label>
+      <input type="text" id="phone" placeholder="Enter 10 Digit Cellphone-number" size="30"/><br>
+      <label id="ivphoneno" style="color: red; visibility:hidden;">InValid</label>
+      <br>
+      <button type="button" onClick="validate()">Submit</button>
+
+    
+
+  </body>   
+  </html>

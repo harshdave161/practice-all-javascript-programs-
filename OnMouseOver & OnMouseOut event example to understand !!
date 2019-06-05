@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    let name=prompt("Enter Your Name");
+const mousein=()=>{
+    var img=document.getElementById("img1").src="https://images.wallpaperscraft.com/image/linux_linux_mint_black_gnu_103855_1280x720.jpg";
+}
+const mouseout=()=>{
+var
+img=document.getElementById("img1").src="https://images.wallpaperscraft.com/image/linux_system_hi-tech_73419_1280x720.jpg";
+}
+console.log("hello "+ name);
+console.log("Hope You understand the Example !! Upvote !!");
+</script>
+
+</head>
+<body>
+    <p>OnMouseOver & OnMouseOut event example to understand !! </p>
+   <p>Example : 1 </p>
+    <img id="img1" onmouseover="mousein()" onmouseout="mouseout()" src="https://images.wallpaperscraft.com/image/linux_system_hi-tech_73419_1280x720.jpg" width="300px">
+    <br>
+    <br><p> Click here to move to mouseout function <br> For:-(mobile devices)</p>
+     <p>Example : 2 </p>
+    <img id="img2" onmouseover="mousein1()" onmouseout="mouseout1()"
+        src="https://images.wallpaperscraft.com/image/new_york_usa_city_top_view_119306_1280x720.jpg" width="300px">
+    <script>
+    const mousein1=()=>{
+    var
+    img=document.getElementById("img2").src="https://images.wallpaperscraft.com/image/hong_kong_china_skyscrapers_night_city_city_lights_119347_1280x720.jpg";
+    }
+    const mouseout1=()=>{
+    var
+    img=document.getElementById("img2").src="https://images.wallpaperscraft.com/image/new_york_usa_city_top_view_119306_1280x720.jpg";
+    }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js" type="text/javascript"></script>
+    <title>javascript partice</title>
+  <script> 
+ const validate=()=>{
+    var uname=document.getElementById("uname");
+    var pass=document.getElementById("pass");
+    if (uname.value.trim() == ""){
+      alert("no blank username ");
+      uname.style.border="solid 3px red";
+      document.getElementById("usname").style.visibility="visible";
+      return false;
+
+    }
+
+    else if(pass.value.trim() ==""){
+      alert("no blank password ");
+       pass.style.border="solid 3px red";
+       document.getElementById("passw").style.visibility="visible";
+      return false;
+    }
+    else if(pass.value.trim().length<5){
+      alert(" Password to short ");
+      return false;
+    }
+    else{
+      return true;
+    }
+
+ }  
+
+  </script>
+  </head>
+  <body>
+
+
+  <form onsubmit="return validate()" action="welcome.html"><!--(use any type of file here it only redirecting too action page)-->
+    <input type="text" id="uname" placeholder="Username"/>
+    <label id="usname" style="color: red; visibility:hidden;">Invalid</label>
+    <br><br>
+    <input type="password" id="pass" placeholder="Password"/>
+    <label id="passw" style="color: red; visibility:hidden;">Invalid</label><br>
+
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  
+
+</body>   
+</html>
